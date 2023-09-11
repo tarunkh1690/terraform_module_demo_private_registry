@@ -1,2 +1,1 @@
-# terraform_module_demo_private_registry
-terraform_module_demo_private_registry
+# terraform_module
