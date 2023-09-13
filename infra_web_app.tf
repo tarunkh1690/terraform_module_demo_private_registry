@@ -24,7 +24,7 @@ resource "aws_security_group_rule" "webapp_ssh_22" {
   from_port         = 22
   to_port           = 22
   protocol          = "tcp"
-  cidr_blocks       = ["49.205.33.0/24"]
+  cidr_blocks       = ["49.205.35.0/24"]
   security_group_id = aws_security_group.webapp.id
 }
 
@@ -82,7 +82,7 @@ resource "aws_security_group_rule" "webapp_httpd_8080" {
   from_port         = 8080
   to_port           = 8080
   protocol          = "tcp"
-  cidr_blocks       = ["49.205.33.0/24"]
+  cidr_blocks       = ["49.205.35.0/24"]
   security_group_id = aws_security_group.webapp.id
 }
 
