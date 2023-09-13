@@ -63,13 +63,13 @@ resource "aws_lb_listener" "wepapp_ls_list_8080" {
 
 resource "aws_lb_target_group_attachment" "aza_webapp_http" {
   target_group_arn = aws_lb_target_group.webapp-target.arn
-  target_id        = module.web_application.instances.Web01.id
+  target_id        = module.web_application.instances.Web03.id
   port             = 8080
 }
 
 resource "aws_lb_target_group_attachment" "azb_webapp_http" {
   target_group_arn = aws_lb_target_group.webapp-target.arn
-  target_id        = module.web_application2.instances.Web02.id
+  target_id        = module.web_application2.instances.Web04.id
   port             = 8080
 }
 
@@ -122,13 +122,13 @@ resource "aws_lb_listener" "wepapp_public_ls_list_8080" {
 
 resource "aws_lb_target_group_attachment" "aza_public_webapp_http" {
   target_group_arn = aws_lb_target_group.public-webapp-target.arn
-  target_id        = module.web_application.instances.Web01.id
+  target_id        = module.web_application.instances.Web03.id
   port             = 8080
 }
 
 resource "aws_lb_target_group_attachment" "azb_public_webapp_http" {
   target_group_arn = aws_lb_target_group.public-webapp-target.arn
-  target_id        = module.web_application2.instances.Web02.id
+  target_id        = module.web_application2.instances.Web04.id
   port             = 8080
 }
 
