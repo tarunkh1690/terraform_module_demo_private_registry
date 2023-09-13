@@ -27,7 +27,7 @@ module "web_application" {
 
   host_prefix = "${var.client.prod_host_prefix}"
 
-  hosts = ["Web01"]
+  hosts = ["Web03"]
 
 }
 
@@ -55,7 +55,7 @@ module "web_application2" {
 
   host_prefix = "${var.client.prod_host_prefix}"
 
-  hosts = ["Web02"]
+  hosts = ["Web04"]
 
 
 }
