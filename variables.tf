@@ -1,13 +1,13 @@
 
 
 locals {
-    vpc_id                     = data.terraform_remote_state.terraform_module_demo_publicmodule.outputs.vpc_id
-    aza_private_subnet_id      = data.terraform_remote_state.terraform_module_demo_publicmodule.outputs.private_subnets[0]  
-    azb_private_subnet_id      = data.terraform_remote_state.terraform_module_demo_publicmodule.outputs.private_subnets[1]
-    azc_private_subnet_id      = data.terraform_remote_state.terraform_module_demo_publicmodule.outputs.private_subnets[2] 
-    aza_public_subnet_id       = data.terraform_remote_state.terraform_module_demo_publicmodule.outputs.public_subnets[0]
-    azb_public_subnet_id       = data.terraform_remote_state.terraform_module_demo_publicmodule.outputs.public_subnets[1]
-    azc_public_subnet_id       = data.terraform_remote_state.terraform_module_demo_publicmodule.outputs.public_subnets[2] 
+    vpc_id                     = data.terraform_remote_state.terraform_module_demo_public_modules.outputs.vpc_id
+    aza_private_subnet_id      = data.terraform_remote_state.terraform_module_demo_public_modules.outputs.private_subnets[0]  
+    azb_private_subnet_id      = data.terraform_remote_state.terraform_module_demo_public_modules.outputs.private_subnets[1]
+    azc_private_subnet_id      = data.terraform_remote_state.terraform_module_demo_public_modules.outputs.private_subnets[2] 
+    aza_public_subnet_id       = data.terraform_remote_state.terraform_module_demo_public_modules.outputs.public_subnets[0]
+    azb_public_subnet_id       = data.terraform_remote_state.terraform_module_demo_public_modules.outputs.public_subnets[1]
+    azc_public_subnet_id       = data.terraform_remote_state.terraform_module_demo_public_modules.outputs.public_subnets[2] 
 
 #    assume_role_policy = "${data.aws_iam_policy_document.assume_role_policy.json}"
 #    policy = "${data.aws_iam_policy_document.policy.json}"
